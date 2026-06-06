@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAYARABUGYALOFFICIAL — Premium Himalayan Treks</title>
+  <meta name="description" content="DayaraBugyalOfficial - Premium Himalayan treks & expeditions. Explore Dayara Bugyal, Kedarkantha, Surya Top and more with local experts." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            teal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            }
+          },
+          keyframes: {
+            fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            slowZoom: { '0%': { transform: 'scale(1)' }, '100%': { transform: 'scale(1.1)' } },
+            float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'slow-zoom': 'slowZoom 20s linear infinite alternate',
+            'float': 'float 3s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #e2e8f0; }
+    ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+    .glass-nav { background: rgba(15,23,42,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(148,163,184,0.4); }
+    .timeline-line { position:absolute; left:12px; top:0; bottom:0; width:2px; background:#e2e8f0; }
+    .modal-scroll { scrollbar-width: thin; scrollbar-color: rgba(148,163,184,.8) transparent; }
+  </style>
+</head>
+
+<body class="font-sans text-slate-700 bg-slate-50 antialiased selection:bg-teal-100 selection:text-teal-900">
+
+<!-- NAVBAR -->
+<nav id="main-nav" class="fixed top-0 left-0 w-full z-40 transition-all duration-500 py-4">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 rounded-lg overflow-hidden shadow-lg bg-white flex items-center justify-center">
+        <img src="images/logo.png" alt="Dayara Bugyal Logo" class="w-full h-full object-contain" />
+      </div>
+      <div class="flex flex-col leading-tight">
+        <span id="brand" class="font-serif font-bold text-lg tracking-wide text-white group-hover:text-teal-400 transition">DAYARABUGYAL</span>
+        <span id="brand-sub" class="text-[10px] uppercase tracking-[0.2em] text-teal-100/80 font-semibold">Official</span>
+      </div>
+    </a>
+
+    <!-- Desktop menu -->
+    <div id="desktop-menu" class="hidden md:flex items-center gap-8 text-[13px] font-semibold tracking-[0.15em] uppercase text-white/90">
+      <a href="#home" class="hover:text-teal-300 transition-colors nav-link">Home</a>
+      <a href="#packages" class="hover:text-teal-300 transition-colors nav-link">Treks</a>
+      <a href="#about" class="hover:text-teal-300 transition-colors nav-link">About</a>
+      <a href="#contact" class="bg-teal-600 hover:bg-teal-500 text-white px-5 py-2.5 rounded-full shadow-lg shadow-teal-900/40 transition-all">Book Now</a>
+    </div>
+
+    <!-- Mobile button -->
+    <button id="mobile-btn" class="md:hidden text-white focus:outline-none">
+      <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" stroke="currentColor"><path d="M4 8h16M4 16h16" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden" fill="none" stroke="currentColor"><path d="M6 6l12 12M6 18L18 6" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-slate-950/95 backdrop-blur-xl border-t border-slate-800">
+    <div class="flex flex-col items-center gap-4 py-6 text-sm font-semibold uppercase tracking-[0.18em] text-slate-100">
+      <a href="#home" onclick="closeMobileMenu()" class="hover:text-teal-300">Home</a>
+      <a href="#packages" onclick="closeMobileMenu()" class="hover:text-teal-300">Treks</a>
+      <a href="#about" onclick="closeMobileMenu()" class="hover:text-teal-300">About</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="hover:text-teal-300">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="images/home.jpg" alt="Himalayan panorama" class="w-full h-full object-cover animate-slow-zoom" />
+    <div class="absolute inset-0 bg-slate-900/30 mix-blend-multiply"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl space-y-8 pt-16 animate-fade-in-up">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-[11px] sm:text-xs uppercase tracking-[0.25em] text-teal-100 backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+      Official Treks &amp; Expeditions
+    </div>
+
+    <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-[0_15px_40px_rgba(0,0,0,0.8)]">
+      Travel far enough,<br/>
+      <span class="text-teal-300 italic font-medium">you meet yourself.</span>
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-slate-100/90 max-w-2xl mx-auto">
+      “Not all those who wander are lost.” Walk ancient shepherd trails, camp under a million stars,
+      and experience the Himalayas with local mountain people.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+      <a href="#packages" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold py-3.5 px-10 rounded-full shadow-lg shadow-teal-500/40 transition-all hover:-translate-y-[2px]">
+        Explore Treks
+      </a>
+      <a href="#contact" class="bg-white/10 hover:bg-white/15 border border-white/25 text-white font-semibold py-3.5 px-10 rounded-full backdrop-blur-md transition-all hover:-translate-y-[2px]">
+        Enquire Now
+      </a>
+    </div>
+  </div>
+
+  <a href="#packages" class="absolute bottom-6 sm:bottom-10 text-white/60 hover:text-white transition-colors animate-bounce">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" stroke="currentColor"><path d="M7 13l5 5 5-5M7 6l5 5 5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+
+<!-- TREKS -->
+<section id="packages" class="py-20 sm:py-24 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-12 sm:mb-16">
+      <div class="max-w-2xl">
+        <span class="text-xs font-bold tracking-[0.28em] uppercase text-teal-700">Curated Adventures</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-3">Upcoming Expeditions</h2>
+        <p class="mt-4 text-slate-600 text-base sm:text-lg">
+          Handcrafted treks from beginner–friendly snow trails to serious high–altitude journeys.
+          Run by locals from Uttarkashi who know every ridge, stream, and weather mood.
+        </p>
+      </div>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 text-sm font-semibold tracking-[0.18em] uppercase text-teal-700 hover:text-teal-500">
+        Custom Plan? Talk to Us
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div id="packages-grid" class="grid gap-7 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-20 sm:py-24 bg-white overflow-hidden">
+  <div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-teal-50 blur-3xl opacity-70 pointer-events-none"></div>
+  <div class="absolute -bottom-40 -left-10 w-72 h-72 rounded-full bg-slate-100 blur-3xl opacity-80 pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+    <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-5">The Dayara Promise</h2>
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+        We are not a city company. We are mountain people from Raithal &amp; Uttarkashi.
+        For us, these treks are home. When you travel with us, you walk like a guest of the mountains —
+        slow, safe, and respectfully.
+      </p>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-3">
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center mb-6 shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-teal-700" fill="none" stroke="currentColor"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Local Expertise</h3>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Our guides grew up on these slopes. Expect shortcuts through oak forests, local stories by the fire,
+          and winter tips that only villagers know.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center mb-6 shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-teal-700" fill="none" stroke="currentColor"><circle cx="9" cy="7" r="4"/><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
+        </div>
+        <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Small Groups</h3>
+        <p class="text-slate-600 text-sm sm:text-base">
+          No crowded trails, no shouting. We keep batches intimate so you still hear the crunch of snow
+          and wind in the pines — not speakers and whistles.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center mb-6 shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-teal-700" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Safety First</h3>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Every trek is backed with mountain–grade gear, route planning, oxygen, pulse oximeter and a trained
+          local leader who knows when to push and when to turn back.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / BOOKING -->
+<section id="contact" class="relative bg-slate-950 text-slate-200 py-20 sm:py-24">
+  <div class="absolute inset-0 bg-[url('images/suryatop_main.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+    <div class="grid gap-16 lg:grid-cols-2 items-center">
+      <!-- Left: info -->
+      <div class="space-y-10">
+        <div>
+          <span class="text-xs font-bold tracking-[0.28em] uppercase text-teal-300">Get in touch</span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 mb-4">Plan your Himalayan story.</h2>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            “Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did.”
+            Drop us a message — we answer personally, not with bots.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-teal-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"><path d="M22 17v3a2 2 0 0 1-2.2 2 20 20 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A20 20 0 0 1 2 6a2 2 0 0 1 2.1-2h3a2 2 0 0 1 2 1.7 13 13 0 0 0 .7 2.8l-1 1a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4 13 13 0 0 0 2.8.7A2 2 0 0 1 22 17z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Call / WhatsApp</p>
+              <p class="text-lg font-semibold text-white">+91-9045578774 / 6002449316</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-teal-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Email</p>
+              <p class="text-lg font-semibold text-white">officialdayarabugyal@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-teal-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Base Camp</p>
+              <p class="text-lg font-semibold text-white">Raithal, Uttarkashi, Uttarakhand</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 pt-2">
+          <a href="https://www.instagram.com/dayarabugyalofficial" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-300 hover:bg-teal-600 hover:text-white transition shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-300 hover:bg-teal-600 hover:text-white transition shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: booking form -->
+      <div class="bg-white text-slate-900 rounded-3xl shadow-2xl p-7 sm:p-8 lg:p-9 relative overflow-hidden">
+        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-teal-400 via-teal-600 to-teal-400"></div>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold mb-1">Book your adventure</h3>
+        <p class="text-slate-500 text-sm sm:text-base mb-6">Fill in your details and we’ll receive your enquiry on WhatsApp &amp; email.</p>
+
+        <form id="booking-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+          <div>
+            <input id="form-name" name="name" type="text" required placeholder="Your Name" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input id="form-phone" name="phone" type="tel" required placeholder="Phone Number" class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" />
+            <input id="form-email" name="email" type="email" required placeholder="Email Address" class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" />
+          </div>
+          <div>
+            <label for="form-date" class="block text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 mb-1">Preferred travel date</label>
+            <input id="form-date" name="date" type="date" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-slate-700" />
+          </div>
+          <div class="relative">
+            <select id="form-trek" name="trek" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+              <option value="" selected disabled>Select a Trek</option>
+            </select>
+            <div class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+
+          <button type="submit" class="mt-1 w-full flex items-center justify-center gap-2 rounded-xl bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold text-sm sm:text-base px-4 py-3.5 shadow-lg shadow-green-500/40 transition-colors">
+            Send enquiry on WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-14 border-t border-slate-800 pt-6 text-center text-xs sm:text-sm text-slate-400">
+      <p>© <span id="year"></span> DAYARABUGYALOFFICIAL. All rights reserved.</p>
+      <p class="mt-1 text-slate-500">Made with ❤️ in the Himalayas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="details-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-md items-center justify-center px-4 py-6">
+  <div id="modal-container" class="bg-white max-w-5xl w-full max-h-[90vh] rounded-2xl overflow-hidden flex flex-col opacity-0 scale-95 transition-all duration-200">
+    <!-- Hero -->
+    <div class="relative h-60 sm:h-72 md:h-80">
+      <div id="modal-hero" class="w-full h-full bg-center bg-cover"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+      <button id="modal-close" class="absolute top-4 right-4 rounded-full bg-black/40 text-white w-9 h-9 flex items-center justify-center hover:bg-black/60">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"><path d="M6 6l12 12M6 18L18 6" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="absolute bottom-0 left-0 right-0 px-5 sm:px-7 pb-5">
+        <div id="modal-tags" class="flex flex-wrap gap-2 mb-3 text-[11px] font-semibold"></div>
+        <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white"></h2>
+        <div id="modal-meta" class="mt-2 flex flex-wrap gap-4 text-xs sm:text-sm text-slate-100/90"></div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div id="modal-content" class="flex-1 overflow-y-auto modal-scroll px-5 sm:px-7 py-6 space-y-8 text-sm sm:text-base"></div>
+
+    <!-- Footer -->
+    <div class="border-t border-slate-100 px-5 sm:px-7 py-4 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between bg-slate-50">
+      <button type="button" onclick="backToTreks()" class="text-xs sm:text-sm font-semibold text-slate-600 hover:text-teal-700 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"><path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all treks
+      </button>
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+        <button type="button" onclick="bookViaWhatsApp()" id="modal-whatsapp-btn" class="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-white text-xs sm:text-sm font-semibold shadow-lg shadow-green-500/30">
+          WhatsApp about this trek
+        </button>
+        <button type="button" onclick="modalScrollToBooking()" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-teal-700 hover:bg-teal-800 text-white text-xs sm:text-sm font-semibold shadow-lg shadow-teal-700/30">
+          Book this trek
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden email form -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<form id="hidden-booking-form" action="https://formsubmit.co/officialdayarabugyal@gmail.com" method="POST" target="hidden_iframe" style="display:none;">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="trek" id="booking-trek">
+  <input type="hidden" name="user_name" id="booking-name">
+  <input type="hidden" name="user_phone" id="booking-phone">
+  <input type="hidden" name="user_email" id="booking-email">
+  <input type="hidden" name="timestamp" id="booking-ts">
+  <input type="hidden" name="user_agent" id="booking-ua">
+  <input type="hidden" name="referrer" id="booking-ref">
+</form>
+
+<!-- Floating WhatsApp Button with pre-filled text -->
+<a href="https://wa.me/919045578774?text=Hey%20DayaraBugyalOfficial%2C%20I%20want%20to%20plan%20a%20trek%20from%20your%20website." target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#128C7E] shadow-xl shadow-green-500/40 flex items-center justify-center text-white animate-float">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<script>
+// Trek data with galleries
+const PACKAGES_DATA = [
+  {
+    id: 1,
+    code: "dayara",
+    title: "Dayara Bugyal Trek",
+    image: "images/dayara_main.jpg",
+    price: "₹7,999",
+    duration: "4 Days / 3 Nights",
+    difficulty: "Easy–Moderate",
+    altitude: "11,950 ft",
+    location: "Raithal, Uttarkashi",
+    rating: 4.8,
+    shortDescription: "Classic alpine meadow trek with grand views of Bandarpoonch & Gangotri range.",
+    overview: {
+      startPoint: "Raithal (7,400 ft)",
+      distance: "20 km (approx.)",
+      pickup: "Dehradun",
+      season: "All year • Best: Dec–Apr & Sep–Nov"
+    },
+    gallery: [
+      "images/dayara_main.jpg",
+      "images/dayara_1.jpg",
+      "images/dayara_2.jpg",
+      "images/dayara_3.jpg",
+      "images/dayara_4.jpg",
+      "images/dayara_5.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Dehradun / Rishikesh → Raithal village",
+        desc: "Drive along the Bhagirathi river via Uttarkashi (7–8 hrs). Evening village walk, trek briefing and gear check. Overnight homestay with local food."
+      },
+      {
+        day: "Day 2",
+        title: "Raithal → Gui campsite",
+        desc: "Gradual ascent through dense oak & rhododendron forest. First snow patches in winter. Stunning sunset on the Gangotri range from Gui meadow. Camp overnight."
+      },
+      {
+        day: "Day 3",
+        title: "Gui → Dayara Bugyal summit → back to Gui",
+        desc: "Open meadows from early on. Long ridge walk with 270° views of Bandarpoonch, Black Peak, Jaonli and more. Spend time on the main Bugyal, play in snow (seasonal), return to Gui for a warm dinner."
+      },
+      {
+        day: "Day 4",
+        title: "Gui → Raithal → Dehradun / onward travel",
+        desc: "Easy descend to Raithal (2–3 hrs). Freshen up at homestay and start your drive back with target Dehradun by evening."
+      }
+    ],
+    inclusions: [
+      "Experienced local trek leader & support staff",
+      "Homestay at Raithal on Day 1 (twin / triple sharing)",
+      "Tents, sleeping bags, mattresses & common toilet tent",
+      "All veg meals during trek (Raithal to Raithal)",
+      "Forest permits & trek fee",
+      "Basic first–aid, oximeter & backup oxygen cylinder"
+    ]
+  },
+  {
+    id: 2,
+    code: "suryatop",
+    title: "Surya Top Winter Trek",
+    image: "images/suryatop_main.jpg",
+    price: "₹11,999",
+    duration: "6 Days / 5 Nights",
+    difficulty: "Easy–Moderate",
+    altitude: "12,900 ft",
+    location: "Dayara Ridge, Uttarkashi",
+    rating: 4.9,
+    shortDescription: "A high ridge above Dayara Bugyal with insane winter sunrise views on the Gangotri peaks.",
+    overview: {
+      startPoint: "Raithal",
+      distance: "32 km (approx.)",
+      pickup: "Dehradun",
+      season: "Dec–Mar (peak winter)"
+    },
+    gallery: [
+      "images/suryatop_main.jpg",
+      "images/suryatop_1.jpg",
+      "images/suryatop_2.jpg",
+      "images/suryatop_3.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Dehradun → Raithal",
+        desc: "Early morning pickup, drive to Raithal. Evening acclimatisation walk and winter briefing. Night stay in warm village homestay."
+      },
+      {
+        day: "Day 2",
+        title: "Raithal → Dayara Bugyal winter campsite",
+        desc: "Snow–covered forest trail. Depending on snow, we camp either around Gui or Dayara. Learn basics of walking on snow & layering."
+      },
+      {
+        day: "Day 3",
+        title: "Dayara → Devkund / Bakaria Top area",
+        desc: "Traverse deep snow meadows to a secluded bowl near Devkund. Great place for photography and snow slides. Evening bonfire if weather allows."
+      },
+      {
+        day: "Day 4",
+        title: "Devkund → Surya Top summit → Devkund",
+        desc: "Alpine start around 4 AM. Steady climb to Surya Top (≈12,900 ft). Witness first light hitting the Gangotri, Srikanth and Bandarpoonch peaks. Return safely to Devkund campsite."
+      },
+      {
+        day: "Day 5",
+        title: "Devkund → Chilapada / Gui",
+        desc: "Leisurely descend through meadows and forest. Last night camping with group celebration and trip reflections."
+      },
+      {
+        day: "Day 6",
+        title: "Chilapada → Raithal → Dehradun",
+        desc: "Short descend to Raithal, freshen up and depart for Dehradun. Trip ends by late evening."
+      }
+    ],
+    inclusions: [
+      "Winter–experienced trek leader & support team",
+      "Crampons / micro–spikes & gaiters in heavy snow",
+      "Tents, sleeping bags & common equipment",
+      "All veg meals on trek (Raithal to Raithal)",
+      "Transport support Raithal–Dehradun (as per plan)",
+      "First–aid, high–altitude emergency kit & oxygen"
+    ]
+  },
+  {
+    id: 3,
+    code: "kedarkantha",
+    title: "Kedarkantha Trek",
+    image: "images/kedarkantha_main.jpg",
+    price: "₹6,999",
+    duration: "5 Days / 4 Nights",
+    difficulty: "Beginner Friendly",
+    altitude: "12,500 ft",
+    location: "Sankri, Uttarkashi",
+    rating: 4.8,
+    shortDescription: "Probably India’s most loved winter summit with a legendary sunrise from the top.",
+    overview: {
+      startPoint: "Sankri",
+      distance: "24 km (approx.)",
+      pickup: "Dehradun",
+      season: "Dec–Apr & late Autumn"
+    },
+    gallery: [
+      "images/kedarkantha_main.jpg",
+      "images/kedarkantha_1.jpg",
+      "images/kedarkantha_2.jpg",
+      "images/kedarkantha_3.jpg",
+      "images/kedarkantha_4.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Dehradun → Sankri",
+        desc: "Scenic drive via Mussoorie, Purola & Mori along the Tons river. Evening exploration of Sankri village and gear check."
+      },
+      {
+        day: "Day 2",
+        title: "Sankri → Juda ka Talab",
+        desc: "Steady climb through pine forest and clearings to the iconic frozen lake of Juda ka Talab. Campsite surrounded by tall trees."
+      },
+      {
+        day: "Day 3",
+        title: "Juda ka Talab → Kedarkantha Base",
+        desc: "Short but slightly steep climb to open meadows just below the summit ridge. Grand views of Swargarohini and Bandarpoonch ranges."
+      },
+      {
+        day: "Day 4",
+        title: "Summit Kedarkantha (12,500 ft) → descend to Hargaon / Sankri",
+        desc: "Start pre–dawn with headlamps. Reach summit for sunrise and 360° views of Garhwal peaks. Long descent via Juda or alternative route to Hargaon or Sankri depending on snow."
+      },
+      {
+        day: "Day 5",
+        title: "Hargaon / Sankri → Dehradun",
+        desc: "Drive back to Dehradun with Himalayan memories and maybe some aching calves."
+      }
+    ],
+    inclusions: [
+      "Dehradun–Sankri–Dehradun transport as per plan",
+      "Accommodation at Sankri (guest house) and in camps",
+      "All meals during trek (veg) from Sankri to Sankri",
+      "Tents, sleeping bags & technical support gear",
+      "Forest permits & trek fee",
+      "First–aid & emergency support"
+    ]
+  },
+  {
+    id: 4,
+    code: "dodital",
+    title: "Dodital & Darwa Pass Trek",
+    image: "images/dodital_main.jpg",
+    price: "₹7,999",
+    duration: "5 Days / 4 Nights",
+    difficulty: "Easy–Moderate",
+    altitude: "10,050 ft (lake) / ~13,000 ft (Darwa)",
+    location: "Agora, Uttarkashi",
+    rating: 4.7,
+    shortDescription: "A serene lake trek through dense forests ending at the mythological birthplace of Lord Ganesha.",
+    overview: {
+      startPoint: "Agora village",
+      distance: "34 km (approx.)",
+      pickup: "Dehradun",
+      season: "Round the year (snow in winter)"
+    },
+    gallery: [
+      "images/dodital_main.jpg",
+      "images/dodital_1.jpg",
+      "images/dodital_2.jpg",
+      "images/dodital_3.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Dehradun → Uttarkashi → Agora",
+        desc: "Drive along Bhagirathi to Uttarkashi and further to the small village of Agora. Evening walk to Assi Ganga viewpoint. Night stay in basic homestay."
+      },
+      {
+        day: "Day 2",
+        title: "Agora → Dodital Lake",
+        desc: "Beautiful forest trail with multiple water points and bridges. Reach the emerald Dodital lake by evening. Visit the temple by the lake shore."
+      },
+      {
+        day: "Day 3",
+        title: "Dodital → Darwa Pass → back to Dodital",
+        desc: "Steep climb to Darwa Top / Pass which opens up views of Bandarpoonch and other high peaks. Descend carefully back to lake campsite."
+      },
+      {
+        day: "Day 4",
+        title: "Dodital → Agora",
+        desc: "Retrace your steps through forest and streams to Agora. Evening free to explore village life."
+      },
+      {
+        day: "Day 5",
+        title: "Agora → Dehradun",
+        desc: "Drive back to Dehradun. Trip ends."
+      }
+    ],
+    inclusions: [
+      "Transport support ex–Uttarkashi (as per plan)",
+      "Homestay at Agora & lake camping",
+      "All meals from Agora to Agora (veg)",
+      "Camping equipment & trek permits",
+      "Local guide & support staff",
+      "First–aid and basic safety gear"
+    ]
+  },
+  {
+    id: 5,
+    code: "gaumukh",
+    title: "Gaumukh–Tapovan Trek",
+    image: "images/gaumukh_main.jpg",
+    price: "₹16,999",
+    duration: "6 Days / 5 Nights",
+    difficulty: "Moderate–Challenging",
+    altitude: "14,600 ft (Tapovan)",
+    location: "Gangotri National Park",
+    rating: 5.0,
+    shortDescription: "Legendary trail to the source of river Ganga and the base of mighty Mt. Shivling.",
+    overview: {
+      startPoint: "Gangotri",
+      distance: "46 km (approx.)",
+      pickup: "Dehradun",
+      season: "May–Jun & Sep–Oct"
+    },
+    gallery: [
+      "images/gaumukh_main.jpg",
+      "images/gaumukh_1.jpg",
+      "images/gaumukh_2.jpg",
+      "images/gaumukh_3.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Dehradun → Gangotri",
+        desc: "Long but scenic drive via Uttarkashi and Harsil valley to the pilgrimage town of Gangotri. Evening Aarti at the temple if time permits."
+      },
+      {
+        day: "Day 2",
+        title: "Gangotri → Chirbasa",
+        desc: "Enter Gangotri National Park. Trek along the Bhagirathi river with pine forests and big views of Sudarshan Parbat. Camp at Chirbasa."
+      },
+      {
+        day: "Day 3",
+        title: "Chirbasa → Bhojbasa",
+        desc: "Shorter day walking on a gradually rising trail. Bhojbasa gives first clear views of Bhagirathi I, II, III peaks. Evening acclimatisation walk."
+      },
+      {
+        day: "Day 4",
+        title: "Bhojbasa → Gaumukh → Tapovan",
+        desc: "Trek to the snout of the Gaumukh glacier, then cross moraine and climb steeply to reach the high meadow of Tapovan at the base of Mt. Shivling."
+      },
+      {
+        day: "Day 5",
+        title: "Tapovan exploration → descend to Bhojbasa",
+        desc: "Morning photography and optional walk towards Meru glacier. After breakfast descend carefully back to Bhojbasa campsite."
+      },
+      {
+        day: "Day 6",
+        title: "Bhojbasa → Gangotri → Dehradun",
+        desc: "Trek back to Gangotri and drive to Dehradun. Keep buffer day for weather / road conditions if your schedule is tight."
+      }
+    ],
+    inclusions: [
+      "Gangotri National Park permits & fees",
+      "Trek leader, guide and support staff",
+      "High–altitude tents & sleeping system",
+      "All meals during trek (Gangotri to Gangotri)",
+      "Technical guidance for glacier section",
+      "First–aid, oximeter & emergency oxygen"
+    ]
+  },
+  {
+    id: 6,
+    code: "annapurna",
+    title: "Annapurna Base Camp (ABC)",
+    image: "images/annapurna_main.jpg",
+    price: "Upcoming",
+    duration: "7–9 Days (Custom ex–Pokhara)",
+    difficulty: "Moderate",
+    altitude: "≈13,550 ft / 4,130 m",
+    location: "Annapurna Sanctuary, Nepal",
+    rating: 0,
+    shortDescription: "Iconic Nepal trek into a natural amphitheatre of 8,000m giants. Opening soon with trusted local Nepali partners.",
+    overview: {
+      startPoint: "Pokhara / Nayapul (Nepal)",
+      distance: "Approx. 70–80 km (round trip)",
+      pickup: "Pokhara (to be finalised)",
+      season: "Spring & Autumn windows"
+    },
+    gallery: [
+      "images/annapurna_main.jpg"
+    ],
+    itinerary: [
+      {
+        day: "Overview",
+        title: "Sample ABC Flow (Indicative Only)",
+        desc: "Pokhara arrival → Nayapul → Ghandruk → Chhomrong → Himalaya / Deurali → Machapuchare Base Camp → Annapurna Base Camp (ABC) and back via Jhinu Hot Springs. Final route and night halts will be customised as per group, weather and permits."
+      }
+    ],
+    inclusions: [
+      "This trek is marked as upcoming.",
+      "Final inclusions will be confirmed once we launch fixed departures with our Nepali partners.",
+      "Reach out on WhatsApp if you wish to pre–block a slot or plan a private ABC batch."
+    ],
+    upcoming: true
+  }
+];
+
+let selectedPackage = null;
+
+// Render trek cards and populate select
+function renderPackages() {
+  const grid = document.getElementById("packages-grid");
+  const trekSelect = document.getElementById("form-trek");
+  grid.innerHTML = "";
+  trekSelect.innerHTML = '<option value="" disabled selected>Select a Trek</option>';
+
+  PACKAGES_DATA.forEach(pkg => {
+    if (!pkg.upcoming) {
+      const opt = document.createElement("option");
+      opt.value = pkg.title;
+      opt.textContent = pkg.title;
+      trekSelect.appendChild(opt);
+    }
+
+    const card = document.createElement("article");
+    card.className = "bg-white rounded-2xl shadow-lg shadow-slate-200/70 overflow-hidden flex flex-col hover:-translate-y-1.5 transition-transform duration-300 group";
+
+    const ratingBadge = pkg.rating && pkg.rating > 0
+      ? '<div class="absolute top-3 right-3 bg-white/90 rounded-full px-2.5 py-1 flex items-center gap-1 text-[11px] font-semibold shadow-sm"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-3.5 h-3.5 text-amber-400\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 17.3l-6.16 3.24 1.18-6.88L2 9.76l6.92-1.01L12 2l3.08 6.75L22 9.76l-5.02 3.84 1.18 6.88z\"/></svg>' + pkg.rating.toFixed(1) + "</div>"
+      : "";
+
+    const priceBlock = pkg.upcoming
+      ? '<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-[11px] font-semibold bg-slate-900 text-amber-300 uppercase tracking-[0.16em]">Upcoming</span>'
+      : '<div><p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">Starting from</p><p class="text-lg font-bold text-teal-700">' + pkg.price + "</p></div>";
+
+    card.innerHTML = `
+      <div class="relative h-48 overflow-hidden">
+        <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        ${ratingBadge}
+        <div class="absolute bottom-3 left-3 text-xs font-semibold text-slate-100 flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>${pkg.location}</span>
+        </div>
+      </div>
+      <div class="p-5 sm:p-6 flex flex-col gap-3 flex-1">
+        <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-teal-700 transition-colors">${pkg.title}</h3>
+        <p class="text-xs text-slate-500 font-medium tracking-[0.16em] uppercase">${pkg.duration} • ${pkg.altitude}</p>
+        <p class="text-sm text-slate-600 line-clamp-3">${pkg.shortDescription}</p>
+        <div class="mt-auto pt-3 flex items-center justify-between gap-3">
+          ${priceBlock}
+          <button type="button" onclick="openModal(${pkg.id})" class="inline-flex items-center justify-center rounded-full bg-slate-900 hover:bg-teal-700 text-white w-9 h-9 shadow-md shadow-slate-900/40 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+// Modal open / close
+function openModal(id) {
+  const pkg = PACKAGES_DATA.find(p => p.id === id);
+  if (!pkg) return;
+  selectedPackage = pkg;
+
+  const modal = document.getElementById("details-modal");
+  const container = document.getElementById("modal-container");
+  const hero = document.getElementById("modal-hero");
+  const titleEl = document.getElementById("modal-title");
+  const tagsEl = document.getElementById("modal-tags");
+  const metaEl = document.getElementById("modal-meta");
+  const contentEl = document.getElementById("modal-content");
+  const waBtn = document.getElementById("modal-whatsapp-btn");
+
+  hero.style.backgroundImage = "url('" + pkg.image + "')";
+  titleEl.textContent = pkg.title;
+
+  tagsEl.innerHTML = `
+    <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-500 text-white">${pkg.difficulty}</span>
+    <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-white/15 border border-white/40 text-slate-100 text-[11px]">Pickup: ${pkg.overview.pickup || "On request"}</span>
+    ${pkg.upcoming ? '<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-500 text-slate-900 font-semibold">Upcoming</span>' : ""}
+  `;
+
+  metaEl.innerHTML = `
+    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>${pkg.duration}</span>
+    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" stroke="currentColor"><path d="M3 20h18L12 4 3 20z"/></svg>${pkg.altitude}</span>
+    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${pkg.overview.startPoint}</span>
+  `;
+
+  // Build gallery
+  let galleryHtml = "";
+  if (pkg.gallery && pkg.gallery.length) {
+    const thumbs = pkg.gallery.map((img, idx) =>
+      '<button type="button" class="border border-slate-200 rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-teal-500">' +
+      '<img src="' + img + '" class="w-full h-40 sm:h-48 object-cover" onclick="swapModalHero(\'' + img + '\')" alt="' + pkg.title + ' photo ' + (idx+1) + '"/>' +
+      "</button>"
+    ).join("");
+    galleryHtml = `
+      <section class="space-y-3">
+        <h3 class="font-serif text-lg font-semibold text-slate-900">Photo Gallery</h3>
+        <p class="text-sm text-slate-600">Swipe through real trail photos from our own batches on this route.</p>
+        <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-3">${thumbs}</div>
+      </section>
+    `;
+  }
+
+  // Itinerary timeline
+  const itineraryHtml = pkg.itinerary.map(item => `
+    <div class="relative pl-8">
+      <div class="absolute left-0 top-1.5 w-3 h-3 rounded-full bg-teal-500 border-2 border-white shadow"></div>
+      <p class="text-xs font-semibold tracking-[0.18em] uppercase text-teal-700 mb-1">${item.day}</p>
+      <h4 class="text-sm sm:text-base font-semibold text-slate-900">${item.title}</h4>
+      <p class="mt-1 text-sm text-slate-600 leading-relaxed">${item.desc}</p>
+    </div>
+  `).join("");
+
+  const inclusionsHtml = pkg.inclusions.map(line => `
+    <li class="flex items-start gap-2 text-sm text-slate-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5 text-teal-600" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>${line}</span>
+    </li>
+  `).join("");
+
+  contentEl.innerHTML = `
+    <section class="bg-teal-50 border border-teal-100 rounded-xl px-4 py-3">
+      <p class="text-sm text-slate-700 italic">"${pkg.shortDescription}"</p>
+    </section>
+
+    ${galleryHtml}
+
+    <section class="space-y-4">
+      <h3 class="font-serif text-lg font-semibold text-slate-900">Quick Facts</h3>
+      <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-4 text-xs sm:text-sm">
+        <div class="rounded-lg bg-slate-50 border border-slate-100 px-3 py-2.5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1">Price</p>
+          <p class="font-semibold text-teal-700">${pkg.upcoming ? "To be announced" : pkg.price}</p>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-100 px-3 py-2.5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1">Distance</p>
+          <p class="font-semibold text-slate-700">${pkg.overview.distance || "On request"}</p>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-100 px-3 py-2.5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1">Best Season</p>
+          <p class="font-semibold text-slate-700">${pkg.overview.season || "Discuss with us"}</p>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-100 px-3 py-2.5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1">Group Size</p>
+          <p class="font-semibold text-slate-700">Small batches • family friendly</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-5">
+      <div class="relative pl-6">
+        <div class="timeline-line"></div>
+        ${itineraryHtml}
+      </div>
+    </section>
+
+    <section class="space-y-3 pb-2">
+      <h3 class="font-serif text-lg font-semibold text-slate-900">What’s included</h3>
+      <ul class="grid gap-y-2 gap-x-4 sm:grid-cols-2">
+        ${inclusionsHtml}
+      </ul>
+      <p class="text-xs text-slate-500 mt-1">Exact inclusions can vary slightly by batch. We’ll share a detailed PDF when you enquire.</p>
+    </section>
+  `;
+
+  // Hide WhatsApp button for upcoming trek to avoid confusion
+  if (pkg.upcoming) {
+    waBtn.classList.add("hidden");
+  } else {
+    waBtn.classList.remove("hidden");
+  }
+
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+
+  requestAnimationFrame(() => {
+    container.classList.remove("opacity-0", "scale-95");
+    container.classList.add("opacity-100", "scale-100");
+  });
+}
+
+function closeModal() {
+  const modal = document.getElementById("details-modal");
+  const container = document.getElementById("modal-container");
+  container.classList.remove("opacity-100", "scale-100");
+  container.classList.add("opacity-0", "scale-95");
+  setTimeout(() => {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "";
+  }, 180);
+}
+
+function backToTreks() {
+  closeModal();
+  document.getElementById("packages").scrollIntoView({ behavior: "smooth" });
+}
+
+function swapModalHero(img) {
+  const hero = document.getElementById("modal-hero");
+  hero.style.backgroundImage = "url('" + img + "')";
+}
+
+// Send WhatsApp from main form + send email silently
+function sendToWhatsApp(e) {
+  e.preventDefault();
+  const name = document.getElementById("form-name").value.trim();
+  const phone = document.getElementById("form-phone").value.trim();
+  const email = document.getElementById("form-email").value.trim();
+  const date = document.getElementById("form-date").value;
+  const trek = document.getElementById("form-trek").value || "Not selected";
+
+  const message = `*New Trek Enquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Preferred Date:* ${encodeURIComponent(date)}%0A*Trek:* ${encodeURIComponent(trek)}%0A%0AEnquiry sent from the DayaraBugyalOfficial website.`;
+
+  const waUrl = "https://wa.me/919045578774?text=" + message;
+  window.open(waUrl, "_blank");
+
+  // Fire email via hidden form
+  document.getElementById("booking-trek").value = trek;
+  document.getElementById("booking-name").value = name;
+  document.getElementById("booking-phone").value = phone;
+  document.getElementById("booking-email").value = email;
+  document.getElementById("booking-ts").value = new Date().toISOString();
+  document.getElementById("booking-ua").value = navigator.userAgent;
+  document.getElementById("booking-ref").value = location.href;
+  document.getElementById("hidden-booking-form").submit();
+
+  // Quick visual feedback
+  if (window.showToast) {
+    showToast("Opening WhatsApp with your trek enquiry.");
+  }
+}
+
+// Modal CTA scroll to booking section & pre-select trek
+function modalScrollToBooking() {
+  if (!selectedPackage) return;
+  closeModal();
+  const formTrek = document.getElementById("form-trek");
+  if (!selectedPackage.upcoming && formTrek) {
+    for (const opt of formTrek.options) {
+      if (opt.value === selectedPackage.title) {
+        formTrek.value = selectedPackage.title;
+        break;
+      }
+    }
+  }
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+// Modal WhatsApp button
+function bookViaWhatsApp() {
+  if (!selectedPackage || selectedPackage.upcoming) return;
+  const msg = `Hi! I am interested in the ${selectedPackage.title}. Please share upcoming batch dates and exact cost.`;
+  const url = "https://wa.me/919045578774?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
+
+// Navbar behaviour
+function setupNavbar() {
+  const nav = document.getElementById("main-nav");
+  const brand = document.getElementById("brand");
+  const brandSub = document.getElementById("brand-sub");
+
+  function updateNav() {
+    if (window.scrollY > 40) {
+      nav.classList.add("glass-nav", "shadow-lg", "shadow-slate-900/30", "py-3");
+      nav.classList.remove("py-4");
+      brand.classList.remove("text-white");
+      brand.classList.add("text-teal-300");
+      brandSub.classList.remove("text-teal-100/80");
+      brandSub.classList.add("text-teal-400");
+    } else {
+      nav.classList.remove("glass-nav", "shadow-lg", "shadow-slate-900/30", "py-3");
+      nav.classList.add("py-4");
+      brand.classList.add("text-white");
+      brand.classList.remove("text-teal-300");
+      brandSub.classList.add("text-teal-100/80");
+      brandSub.classList.remove("text-teal-400");
+    }
+  }
+  updateNav();
+  window.addEventListener("scroll", updateNav);
+}
+
+// Mobile menu
+function setupMobileMenu() {
+  const mbBtn = document.getElementById("mobile-btn");
+  const mbMenu = document.getElementById("mobile-menu");
+  const openIcon = document.getElementById("menu-open");
+  const closeIcon = document.getElementById("menu-close");
+
+  mbBtn.addEventListener("click", () => {
+    const opening = mbMenu.classList.contains("hidden");
+    mbMenu.classList.toggle("hidden");
+    openIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+    if (opening) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  });
+
+  window.closeMobileMenu = () => {
+    if (!mbMenu.classList.contains("hidden")) {
+      mbMenu.classList.add("hidden");
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+  };
+}
+
+// Toast helper
+function showToast(msg) {
+  const div = document.createElement("div");
+  div.className = "fixed top-20 right-4 z-[999] bg-slate-900 text-white text-sm px-4 py-2 rounded-lg shadow-xl flex items-center gap-2 animate-fade-in-up";
+  div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + msg + "</span>";
+  document.body.appendChild(div);
+  setTimeout(() => {
+    div.style.opacity = "0";
+    div.style.transform = "translateY(-6px)";
+    setTimeout(() => div.remove(), 260);
+  }, 2800);
+}
+
+// Modal close events
+document.addEventListener("DOMContentLoaded", () => {
+  renderPackages();
+  setupNavbar();
+  setupMobileMenu();
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("modal-close").addEventListener("click", closeModal);
+  document.getElementById("details-modal").addEventListener("click", (e) => {
+    if (e.target.id === "details-modal") closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !document.getElementById("details-modal").classList.contains("hidden")) {
+      closeModal();
+    }
+  });
+});
+</script>
+
+</body>
+</html>
